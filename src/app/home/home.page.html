@@ -1,20 +1,16 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content fullscreen>
+  <div class="welcome-container">
+    <!-- Fondo con degradado claro -->
+    <div class="background-overlay"></div>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <!-- Imagen principal (logo o gráfico) más grande -->
+    <img src="../assets/icon/corazon.jpg" alt="Logo Corazón" class="logo">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <!-- Mensaje de bienvenida con slogan -->
+    <h1 class="animated-text">¡Bienvenido a Checa Tu Salud!</h1>
+    <p class="sub-text">Tu compañero para un estilo de vida más saludable</p>
+
+    <!-- Botón de inicio sin animación -->
+    <ion-button expand="block" class="start-button" (click)="goToLogin()">Empezar</ion-button>
   </div>
 </ion-content>
